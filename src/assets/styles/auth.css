@@ -1,0 +1,63 @@
+.container-signup{
+    min-height: 100vh;
+    background: grey;
+    position: relative;
+}
+.container-signup .title{
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+.container-signup .wrapper-signup{
+    max-width: 367px;
+    background: white;
+    width: 100%; 
+    padding: 50px 0; 
+}
+.wrapper-signup > div{
+    max-width: 218px;
+}
+.btn{
+    padding: 10px 0;
+    text-transform: Uppercase;
+}
+.btn.signup{
+    background-color: #2E2E2E;
+    color:white;
+}
+.btn.signup-fb{
+    background-color: #3A5998;
+    color:white;
+}
+.btn.signup-g{
+    color: #696969;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+.divider{
+    padding: 12.5px 0;
+}
+.divider .line{
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.divider .or {
+    top: 7px;
+    width: 20px;
+    font-size: 8px;
+    font-weight: 500;
+}
+.group-signup {
+    text-align: center;
+}
+.group-signup > div {
+    color: grey;
+}
+.group-signup a {
+    color: #B2002D;
+    font-weight: 800;
+}
+.tof{
+    color:#c4c4c4;
+}
+

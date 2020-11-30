@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}
+.font-playfair{
+	font-family: 'Playfair Display', serif;
+}
+.font-rubik{
+	font-family: 'Rubik', sans-serif;
+}
+.container-base{
+	margin: 0 85px;
+}
+.font-16{
+	font-size: 16px;
+}
+.text-color-alt{
+	color: #CF987E;
+}
+.bg-color-alt{
+	background-color: #CF987E;
+}
+.title-sec{
+	font-family: 'Rubik', sans-serif;
+	color: #646464;
+}
