@@ -1,6 +1,6 @@
 const NavMobile = () => {
     return (
-        <div className="nav-mobile fixed width-full inset-x-0 bottom-0 z-20 bg-white border-gray-200 sm:hidden">
+        <div className="nav-mobile fixed inset-x-0 bottom-0 z-20 bg-white border-gray-200 sm:hidden">
             <div className="flex justify-between px-8 py-4">
                 <a href="#" className="mx-2 rounded-md hover:bg-gray-100">
                     <img className="block w-auto" src="/images/navmobile/home.svg" alt="icon home" />

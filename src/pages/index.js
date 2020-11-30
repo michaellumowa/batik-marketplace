@@ -4,10 +4,8 @@ import CardProduct from '../components/CardProduct'
 import CardBlog from '../components/CardBlog'
 import NavMobile from '../components/NavMobile'
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
-export default function Home() {
+const Home = () => {
 
   const PrevArrow = (props) => {
     const { className, style, onClick } = props
@@ -47,6 +45,7 @@ export default function Home() {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
+          swipe: false
         },
       },
     ],
@@ -61,7 +60,6 @@ export default function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    touchMove: false,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -69,7 +67,7 @@ export default function Home() {
         breakpoint: 768,
         settings: {
           arrows: false,
-          touchMove: true,
+          dots: true
         },
       },
     ]
@@ -81,7 +79,7 @@ export default function Home() {
       <div className="container-batik md:mt-32">
 
         {/* section main banner */}
-        <div className="max-w-7xl overflow-hidden mx-auto md:px-8 mb-8 md:mb-16 bg-white">
+        <div className="section-banner max-w-7xl overflow-hidden mx-auto md:px-8 mb-8 md:mb-16 bg-white">
           <div className="group-main-slider">
             <Slider {...bannerSettings}>
               {[1, 2, 3].map((v, i) => {
@@ -353,3 +351,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home

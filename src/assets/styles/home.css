@@ -120,12 +120,16 @@
 	top: 40%;
 	height: inherit;
 	width: inherit;
+	z-index:1;
 }
 .group-product-slider .arrow-left {
 	left: -2vw;
 }
 .group-product-slider .arrow-right {
 	right: -2vw;
+}
+.group-product-slider .slick-dots{
+	bottom: 20px;
 }
 
 /* section kategori list */
@@ -166,6 +170,10 @@
 	z-index: 1;
 }
 
+.group-main-slider .slick-dots{
+	bottom: 20px;
+}
+
 @media (max-width: 1240px) {
 	.card-kategori-promo .text-promo {
 		font-size: 5vw;
@@ -177,6 +185,12 @@
 	}
 }
 @media (max-width: 640px) {
+	.section-banner{
+		margin-top: -70px;
+	}
+	.list-banner{
+		border-radius: 0;
+	}
 	.btn-shopnow {
 		width: 115px;
 		height: 40px;
