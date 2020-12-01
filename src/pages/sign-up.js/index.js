@@ -1,4 +1,6 @@
+import { useState } from "react"
 import Link from "next/link"
+import IconEyes from "../../components/IconEyes"
 
 const TextField = ({ label, type }) => {
     return (
@@ -10,10 +12,12 @@ const TextField = ({ label, type }) => {
 }
 
 const signUp = () => {
+    const [eyeOff, seteyeOff] = useState("false")
+
     return (
         <>
             <div className={"container-signup flex justify-center items-center"}>
-                <div className={"absolute top-4 right-4"}>
+                <div className={"absolute top-4 right-4 hidden sm:block"}>
                     <a href="/">
                         <button className={"focus:outline-none bg-white p-4"}>
                             <img src={"/images/close.svg"} alt={"icon cancel"} />
@@ -21,7 +25,15 @@ const signUp = () => {
                     </a>
                 </div>
 
-                <div className={"wrapper-signup shadow text-center mx-2"}>
+                <div className={"wrapper-signup shadow text-center mx-2 relative"}>
+                    <div className={"absolute top-2 right-2 block sm:hidden"}>
+                        <a href="/">
+                            <button className={"focus:outline-none bg-white p-4"}>
+                                <img src={"/images/close.svg"} alt={"icon cancel"} />
+                            </button>
+                        </a>
+                    </div>
+
                     <div className={"mx-auto"}>
                         <form>
                             <div className="title"> Sign Up </div>
@@ -31,8 +43,11 @@ const signUp = () => {
                             <div className={"mt-5"}>
                                 <TextField label={"Email"} type={"text"} />
                             </div>
-                            <div className={"mt-5"}>
-                                <TextField label={"Password"} type={"password"} />
+                            <div className={"mt-5 relative"}>
+                                <TextField label={"Password"} type={eyeOff ? "password" : "text"} />
+                                <button type="button" className={"icon-eyes absolute right-0 top-5 right-2 focus:outline-none"} onClick={() => seteyeOff(!eyeOff)}>
+                                    <IconEyes eyesShow={eyeOff} />
+                                </button>
                             </div>
                             <div className={"mt-5"}>
                                 <TextField label={"Phone Number"} type={"text"} />

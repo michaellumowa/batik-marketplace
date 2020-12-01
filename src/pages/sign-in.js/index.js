@@ -1,4 +1,6 @@
+import { useState } from "react"
 import Link from "next/link"
+import IconEyes from "../../components/IconEyes"
 
 const TextField = ({ label = "input-id", type }) => {
     return (
@@ -10,6 +12,8 @@ const TextField = ({ label = "input-id", type }) => {
 }
 
 const signIn = () => {
+    const [eyeOff, seteyeOff] = useState("false")
+
     return (
         <>
             <div className={"container-signup flex justify-center items-center"}>
@@ -28,8 +32,11 @@ const signIn = () => {
                             <div className={"mt-8"}>
                                 <TextField label={"Email"} type={"text"} />
                             </div>
-                            <div className={"mt-5"}>
-                                <TextField label={"Password"} type={"password"} />
+                            <div className={"mt-5 relative"}>
+                                <TextField label={"Password"} type={eyeOff ? "password" : "text" } />
+                                <button type="button" className={"icon-eyes absolute right-0 top-5 right-2 focus:outline-none"} onClick={() => seteyeOff(!eyeOff)}>
+                                    <IconEyes eyesShow={eyeOff} />
+                                </button>
                             </div>
 
                             <button type="button" className={"btn signup focus:outline-none w-full mt-14 text-xs font-medium hover:opacity-90"}>

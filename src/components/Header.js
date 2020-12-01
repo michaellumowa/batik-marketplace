@@ -55,7 +55,7 @@ const header = () => {
                                         <span className="text-gray-500 ml-2 hidden sm:block">Seller Batik</span>
                                     </a>
                                     <div className="w-0.5 bg-gray-200 my-2 mx-1 hidden sm:block" />
-                                    <a href="/sign-in" className="pl-1 hidden sm:block sm:pl-2 ml-2 py-2 rounded-md text-sm font-medium hover:bg-gray-100">
+                                    <a href="/sign-in" className="px-1 sm:px-2 hidden sm:block sm:pl-2 ml-2 py-2 rounded-md text-sm font-medium hover:bg-gray-100">
                                         <IconHeader className="block w-auto" name={"user"} />
                                     </a>
                                 </div>
