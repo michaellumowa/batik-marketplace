@@ -36,16 +36,10 @@ const Home = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          swipe: false
+          swipe: false,
         },
       },
     ],
