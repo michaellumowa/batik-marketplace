@@ -65,22 +65,21 @@
 	width: 240px;
 }
 
-.nav-mobile{
+.nav-mobile {
 	border-top-width: 2px;
-	color: #4B4B4B;
+	color: #4b4b4b;
 	font-size: 11px;
 	font-family: "Rubik", sans-serif;
 	text-align: center;
 }
 
-/* card blog */	
-.wrapper-card-blog .group-blog-desc{
-	transition: all ease 200ms
+/* card blog */
+.wrapper-card-blog .group-blog-desc {
+	transition: all ease 200ms;
 }
-.wrapper-card-blog:hover .group-blog-desc{
+.wrapper-card-blog:hover .group-blog-desc {
 	box-shadow: 0px 3px 5px 0px #80808091;
 }
-
 
 /* card product */
 .wrapper-product {
@@ -127,4 +126,77 @@
 }
 .group-star .start.filled:after {
 	color: #ffc107;
+}
+
+/* filter */
+
+.wrapper-filter {
+	width: 420px;
+}
+
+.group-checkbox {
+	display: block;
+	position: relative;
+	padding-left: 28px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.group-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 2px;
+	left: 0;
+	height: 16px;
+	width: 16px;
+	border: 1px solid #d0d0d0;
+}
+
+/* On mouse-over, add a grey background color */
+.group-checkbox:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.group-checkbox input:checked ~ .checkmark {
+	background-color: #2196f3;
+	border: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.group-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.group-checkbox .checkmark:after {
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }

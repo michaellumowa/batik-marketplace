@@ -1,0 +1,18 @@
+.group-banner-katalog {
+	max-height: 418px;
+}
+.group-banner-katalog img {
+	max-height: 418px;
+}
+.katalog-kategori {
+	width: 250px;
+	height: 90px;
+}
+.badge-katalog{
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    color: #797979;
+}
+.katalog-kategori img {
+    width: 40px;
+}

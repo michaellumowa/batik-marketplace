@@ -1,7 +1,7 @@
-const CardProduct = () => {
+const CardProduct = ({ className }) => {
     return (
         <>
-            <div className="wrapper-product font-rubik mx-auto">
+            <div className={`wrapper-product font-rubik mx-auto ${className}`}>
                 <a href="#">
                     <div className="group-img">
                         <div className="love-product">

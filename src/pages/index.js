@@ -171,7 +171,7 @@ const Home = () => {
           <div className="group-product-slider">
             <Slider {...Settings}>
               {[1, 2, 3, 4, 5, 6].map((v, i) => {
-                return <CardProduct key={i}></CardProduct>
+                return <CardProduct key={i} />
               })}
             </Slider>
           </div>
